@@ -23,12 +23,14 @@ const element = (
 
 
 function getGreeting(user) {
+  
   if (user) {
     return <h1>Bonjour, {formatName(user)} !</h1>;
   }
   return <h1>Bonjour, Belle Inconnue.</h1>;
 }
 
+const element1 = <div tabIndex="0"></div>;
 
 function App() {
   return (
@@ -38,7 +40,7 @@ function App() {
         {element}
         {getGreeting()}
         {getGreeting(moi)}
-        
+        {element1}
         
       </header>
     </div>
